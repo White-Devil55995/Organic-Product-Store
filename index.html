@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/7120e9a3de.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./style.css">
+    <title>Organic-Store</title>
+</head>
+<body>
+    <!-- this is for  creating nav-bar -->
+     <div class="main-container">
+      <!-- /* this is for creating navbar*/ -->
+       <nav>
+        <div class="nav-container" id="nav-frsPrt">
+            <!-- this is for logo and name -->
+             <img src="../asserts/leaves.png" alt="leaves-pic">
+             <h1 class="logo"> Organic</h1>
+             <button class="btn btn-primary m-3 custom-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" 
+        aria-controls="offcanvasLeft">
+  ☰ 
+</button>
+
+<!-- Offcanvas from Left Side -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft"                             aria-labelledby="offcanvasLeftLabel">
+  <div class="offcanvas-header">
+    <h5 id="offcanvasLeftLabel">Menu</h5>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  
+  <div class="offcanvas-body">
+    <ul class="list-group scrollable-list">
+      <!-- Example of list items with dropdown -->
+      <li class="list-group-item">
+       <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/healthy-food.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Fruits and vegitables</p></a></li> 
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/dairy-product.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+            <p style=" padding-left:20px">Dairy and Eggs</p></a>
+        </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/chicken.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+            <p style=" padding-left:20px">Meat and Poultry</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/fish.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Seafood</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/bakery.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Bakery and Bread</p></a>
+      </li>
+      <li class="list-group-item dropdown">
+        <a href="#" class=" d-flex align-items-center justify-content-between w-100" 
+        id="item1" data-bs-toggle="dropdown" aria-expanded="false" style="text-decoration: none; color:black;">
+         
+         <!-- Left side: Image and Text -->
+         <div class="d-flex align-items-center">
+             <img src="../asserts/sunflower-oil.png" alt="fruits and vegetables" style="width:25px;height:25px;" class="coocking-oil">
+             <p style="margin: 0; padding-left: 10px;">Cooking Oil</p>
+         </div>
+ 
+         <!-- Right side: Dropdown Symbol -->
+         <span class="dropdown-toggle"></span>
+     </a>
+ 
+     <ul class="dropdown-menu" aria-labelledby="item1">
+         <li><a class="dropdown-item" href="#">Gold Drop</a></li>
+         <li><a class="dropdown-item" href="#">Freedom</a></li>
+     </ul>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/canned-food.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Canned Goods</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/frozen.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Frozen Foods</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/spaguetti.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Pasta and Rice</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/breakfast.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Breakfast Foods</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/chips.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Snacks and Chips</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/alcohol.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Beverages</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/spices.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Spices and Seasonings</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/baby.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Baby Food and Formuls</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/healthcare.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Health and Wellness</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/desk-organizer.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Household Supplies</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/cream.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Personal Care</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/pet-supplies.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Pet Food and Supplies</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/shopping.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Men Cloths</p></a>
+      </li>
+      <li class="list-group-item">
+        <a href="#" style="text-decoration: none; color:black;" class="d-flex align-items:center pt-3"> <img src="../asserts/clothing.png" alt="friuts and vegitables" style="width:25px;height:25px;">
+        <p style=" padding-left:20px">Womens Cloths</p></a>
+      </li>
+    </ul>
+  </div>
+</div>
+        </div>
+        <div class="nav-container" id="nav-secPrt">
+         <!-- Example single danger button -->
+        <div class="btn-group drpdwn custom1-dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle handbtn" data-bs-toggle="dropdown" aria-expanded="false">
+        All Categories
+       </button>
+      <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">All Categories</a></li>
+      <li><a class="dropdown-item" href="#">Groceries</a></li>
+      <li><a class="dropdown-item" href="#">Drinks</a></li>
+      <li><a class="dropdown-item" href="#">Chocolates</a></li>
+    </ul>
+       </div>
+       <div class="search-box">
+        <form class="d-flex">
+        <input class="form-control me-2 search border-0" type="search" placeholder="Search 20000 more products" aria-label="Search">
+      </form>
+      <!-- this for search icon -->
+      <i class="fa-solid fa-magnifying-glass search-icon"></i>
+    </div>
+        </div>
+        <div class="nav-container" id="nav-threPrt">
+          <a href="#" class="home fw-bold" style="font-size:18px;">HOME</a>
+          <!-- Example single danger button -->
+          <div class="btn-group custom-dropdown">
+          <button type="button" class="btn btn-danger dropdown-toggle button " data-bs-toggle="dropdown" aria-expanded="false" style="font-weight: bold;font-size: 18px;">
+          PAGES
+        </button>
+       <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">ABOUT US</a></li>
+        <li><a class="dropdown-item" href="#">SHOP</a></li>
+        <li><a class="dropdown-item" href="#">SINGLE PRODUCT</a></li>
+        <li><a class="dropdown-item" href="#">CART</a></li>
+        <li><a class="dropdown-item" href="#">CHECKOUT</a></li>
+        <li><a class="dropdown-item" href="#">BLOG</a></li>
+        <li><a class="dropdown-item" href="#">SINGLE POST</a></li>
+        <li><a class="dropdown-item" href="#">STYLES</a></li>
+        <li><a class="dropdown-item" href="#">CONTACT</a></li>
+        <li><a class="dropdown-item" href="#">THANKYOU</a></li>
+        <li><a class="dropdown-item" href="#">MY ACCOUNT</a></li>
+        <li><a class="dropdown-item" href="#">404 ERROR</a></li>
+      </ul>
+      </div>
+        </div>
+        <div class="nav-container ms-auto" id="nav-frtPrt">
+          <a href="#"><i class="fa-solid fa-circle-user icon" style="color: black; font-size: 20px;"></i></a>
+          <a href="#"><i class="fa-regular fa-bookmark icon"style="color: black; font-size: 20px;"></i></a>
+             <!-- Cart Icon Button (No Background & Border) -->
+         <button class="cart-btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartOffcanvas"
+          aria-controls="cartOffcanvas">
+          <i class="fa-solid fa-cart-shopping icon"style="color: black; font-size: 20px;"></i>
+        </button>
+           <!-- Offcanvas Cart -->
+          <div class="offcanvas offcanvas-end cart-offcanvas" tabindex="-1" id="cartOffcanvas" aria-labelledby="cartOffcanvasLabel">
+          <div class="offcanvas-header">
+          <h5 class="offcanvas-title">Your cart</h5>
+          <span class="cart-badge">3</span>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+         <div class="offcanvas-body">
+         <ul class="list-group cart-items">
+           <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div>
+  <strong>Growers cider</strong>
+  <p class="text-muted small">Brief description</p>
+            </div>
+           <span class="price">$12</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div>
+             <strong>Fresh grapes</strong>
+             <p class="text-muted small">Brief description</p>
+            </div>
+            <span class="price">$8</span>
+          </li>
+          <li class="list-group-item d-flex justify-content-between align-items-start">
+            <div>
+              <strong>Heinz tomato ketchup</strong>
+              <p class="text-muted small">Brief description</p>
+            </div>
+            <span class="price">$5</span>
+         </li>
+       </ul>
+          <!-- Total Amount -->
+          <div class="total-section">
+             <strong>Total (USD)</strong>
+             <span class="total-price">$20</span>
+            </div>
+           <!-- Checkout Button -->
+           <button class="btn btn-success checkout-btn w-100">Continue to checkout</button>
+          </div>
+       </div>
+        </div>
+       </nav>
+       <!-- this is for creating main-part -->
+        <div class="herosection">
+          <div class="title-text">
+            <h1><span style="color: greenyellow; font-weight: bolder;">Organic</span> <span style="color: #fff;">Foods at your</span> <span style="color: #fff;font-weight: bold;">Doorsteps</span></h1>
+            <p class="sub-text" style="color:rgb(247, 247, 250);"> Dignissim Massa diam elementum</p>
+          </div>
+          <div class="buttons-creation">
+            <button class="green-button">START SHOPPING</button>
+            <button class="black-button">JOIN NOW</button>
+          </div>
+          <div class="advertise-block">
+            <div class="block one">
+              <h1 class="digit">14k+</h1>
+              <p class="description"> PRODUCT VERIETIES</p>
+            </div>
+            <div class="block two">
+              <h1 class="digit">50k+</h1>
+              <p class="description">HAPPY CUSTOMERS</p>
+            </div>
+            <div class="block three">
+              <h1 class="digit">10+</h1>
+              <p class="description">STRORE LOCATIONS</p>
+            </div>
+          </div>
+          <div class="services-part">
+            <div class="services one">
+              <div class="icon"><img src="./asserts/reuse.png" alt="pic" style="width: 30px; height: 30px;"></div>
+              <div class="descreption">
+                <h2 > Fresh from farm</h2>
+                <p class="service text1">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+            <div class="services two">
+              <div class="icon"><img src="./asserts/leaf.png" alt="pic" style="width: 30px; height: 30px;"></div>
+              <div class="descreption">
+                <h2 > 100% Orgonic</h2>
+                <p class="service text1">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+            <div class="services three">
+              <div class="icon"><img src="./asserts/van.png" alt="pic" style="width: 30px; height: 30px;"></div>
+              <div class="descreption">
+                <h2 > Free delivery</h2>
+                <p class="service text3">Lorem ipsum dolor sit amet, consectetur adipi elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- this is for creating carousel -->
+          <div class="container-flued category-section">
+            <div class="category-header">
+                <h2 class="category-title fs-1 fw-bold">Category</h2>
+                <div class="header-controls ms-auto">
+                    <button class="view-all-btn">View All</button>
+                    <!-- Custom carousel controls -->
+                    <button class="nav-btn nav-prev" id="prevBtn">
+                        <i></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="nav-btn nav-next" id="nextBtn">
+                        <i></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Custom Carousel (not using Bootstrap carousel) -->
+            <div class="category-carousel" id="categoryCarousel">
+                <div class="category-carousel-inner" id="carouselInner">
+                    <!-- Category Items -->
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1619566636858-adf3ef46400b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Fruits & Veges">
+                        <p class="category-name">Fruits & Veges</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Breads & Sweets">
+                        <p class="category-name">Breads & Sweets</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1566417713940-fe7c737a9ef2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Fruits & Veges">
+                        <p class="category-name">Fruits & Veges</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1563227812-0ea4c22e6cc8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Beverages">
+                        <p class="category-name">Beverages</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Meat Products">
+                        <p class="category-name">Meat Products</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Breads">
+                        <p class="category-name">Breads</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1518843875459-f738682238a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Fruits & Veges">
+                        <p class="category-name">Fruits & Veges</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Breads & Sweets">
+                        <p class="category-name">Breads & Sweets</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1610832958506-aa56368176cf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Dairy Products">
+                        <p class="category-name">Dairy Products</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1606914501449-5a96b6ce24ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Spices">
+                        <p class="category-name">Spices</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Seafood">
+                        <p class="category-name">Seafood</p>
+                    </div>
+                    <div class="category-item">
+                        <img src="https://images.unsplash.com/photo-1621939514649-280e2ee25f60?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80" class="category-img" alt="Frozen Foods">
+                        <p class="category-name">Frozen Foods</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!-- this is for creating best selling products -->     
+    <div class="container-flued mt-5">
+      <div class="uper-part">
+        <h2 class="mb-4 fs-1 fw-bold">Best Selling Products</h2>
+        <a href="#" class="ms-auto"><button class="btn button1">View All</button></a>
+      </div>
+      <div class="row">
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="product-card p-3 ">
+                  <img src="./asserts/pkg-1.jpg" alt="Product 1">
+                  <h5 class="mt-2">Whole Wheat Sandwich Bread</h5>
+                  <p class="text-warning">★★★★★ (222)</p>
+                  <p><del>$24.00</del> <strong>$18.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                <div class="add-to-cart">
+                  <div class="bottam-part d-flex align-items-center gap-2">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="0" type="number">
+                      <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                    </div>
+                    <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                    <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="product-card p-3">
+                <img src="./asserts/pkg-2.jpg" alt="Product 2">
+                <h5 class="mt-2">Whole Grain Oatmeal</h5>
+                <p class="text-warning">★★★★★ (41)</p>
+                <p><del>$54.00</del> <strong>$50.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                <div class="add-to-cart">
+                  <div class="bottam-part d-flex align-items-center gap-2">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="0" type="number">
+                      <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                    </div>
+                    <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                    <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+            </div>
+        </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="product-card p-3">
+                <img src="./asserts/pkg-3.jpg" alt="Product 3">
+                <h5 class="mt-2">Sharp Cheddar Cheese Block</h5>
+                <p class="text-warning">★★★★★ (41)</p>
+                <p><del>$54.00</del> <strong>$50.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                <div class="add-to-cart">
+                  <div class="bottam-part d-flex align-items-center gap-2">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="0" type="number">
+                      <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                    </div>
+                    <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                    <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="product-card p-3">
+                <img src="./asserts/pkg-4.jpg" alt="Product 4">
+                <h5 class="mt-2">Organic Spinach Leaves (Fresh Produce)</h5>
+                <p class="text-warning">★★★★★ (41)</p>
+                <p><del>$54.00</del> <strong>$50.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                <div class="add-to-cart">
+                  <div class="bottam-part d-flex align-items-center gap-2">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="0" type="number">
+                      <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                    </div>
+                    <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                    <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="product-card p-3">
+                  <img src="./asserts/pkg-5.avif" alt="Product 5">
+                  <h5 class="mt-2">Fresh Salmon</h5>
+                  <p class="text-warning">★★★★★ (41)</p>
+                  <p><del>$54.00</del> <strong>$50.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                  <div class="add-to-cart">
+                    <div class="bottam-part d-flex align-items-center gap-2">
+                      <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                      </div>
+                      <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                      <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                    </div>
+                  </div>
+  
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+            <div class="product-card p-3">
+                <img src="./asserts/pkg-6.jpg" alt="Product 6">
+                <h5 class="mt-2">Imported Italian Spaghetti Pasta</h5>
+                <p class="text-warning">★★★★★ (41)</p>
+                <p><del>$54.00</del> <strong>$50.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                <div class="add-to-cart">
+                  <div class="bottam-part d-flex align-items-center gap-2">
+                    <div class="number-input">
+                      <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                      <input class="quantity" min="0" name="quantity" value="0" type="number">
+                      <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                    </div>
+                    <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                    <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                  </div>
+                </div>
+
+            </div>
+        </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="product-card p-3">
+                  <img src="./asserts/pkg-7.avif" alt="Product 7">
+                  <h5 class="mt-2">Granny Smith Apples</h5>
+                  <p class="text-warning">★★★★★ (32)</p>
+                  <p><del>$14.00</del> <strong>$12.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                  <div class="add-to-cart">
+                    <div class="bottam-part d-flex align-items-center gap-2">
+                      <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                      </div>
+                      <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                      <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                    </div>
+                  </div>  
+              </div>
+          </div>
+          <div class="col-md-6 col-lg-4 col-xl-3 mb-4">
+              <div class="product-card p-3">
+                  <img src="https://s7d5.scene7.com/is/image/CentralMarket/007497509-1?hei=124&wid=124&$large$" alt="Product 4">
+                  <h5 class="mt-2">Organic Baby Spinach</h5>
+                  <p class="text-warning">★★★★★ (222)</p>
+                  <p><del>$24.00</del> <strong>$18.00</strong> <span class="badge bg-success">10% OFF</span></p>
+                  <div class="add-to-cart">
+                    <div class="bottam-part d-flex align-items-center gap-2">
+                      <div class="number-input">
+                        <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                        <input class="quantity" min="0" name="quantity" value="0" type="number">
+                        <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                      </div>
+                      <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                      <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                    </div>
+                  </div>  
+              </div>
+          </div>
+      </div>
+  </div>
+      <!-- this is for creating  branding section -->
+      <div class="container-fluid py-4">
+        <div class="row g-3">
+            <!-- Left Large Banner -->
+            <div class="col-lg-8">
+                <div class="sale-banner large-banner d-flex align-items-center">
+                    <div class="banner-content">
+                        <h2>Items on SALE</h2>
+                        <p>Discounts up to 30%</p>
+                        <a href="#" class="shop-now">SHOP NOW</a>
+                    </div>
+                </div>
+            </div>
+    
+            <!-- Right Side Small Banners -->
+            <div class="col-lg-4">
+                <div class="row g-3">
+                    <div class="col-12">
+                        <div class="sale-banner small-banner d-flex align-items-center" id="smbn-1">
+                            <div class="banner-content">
+                                <h3>Combo offers</h3>
+                                <p>Discounts up to 50%</p>
+                                <a href="#" class="shop-now">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="sale-banner small-banner d-flex align-items-center" id="smbn-2">
+                            <div class="banner-content">
+                                <h3>Discount Coupons</h3>
+                                <p>Discounts up to 40%</p>
+                                <a href="#" class="shop-now">SHOP NOW</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- this is for creating Featured products -->
+        <div class="container-flued">
+          <div class="carousel-container">
+            <div class="carousel-header">
+             <div class="headerpart"> <h2 class="carousel-title fs-1 fw-bold">Featured Product</h2></div>
+              <div class="carousel-controls">
+                <a href="#" class="view-all">View All</a>
+                <button class="carousel-control-btn prev-btn">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-btn next-btn">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- this for carousel body -->
+            <div class="product-carousel">
+              <div class="product-slider" id="productSlider">
+                <!-- Product 1 -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-12.jpg" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Greek Style Plain Yougurt</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$24.00</span>
+                      <span class="sale-price">$20.30</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-13.jfif" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">Pure Squeezed No Pulp Juice</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$25.00</span>
+                      <span class="sale-price">$15.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="https://cdn.pixabay.com/photo/2023/01/12/05/31/orange-7713308_1280.jpg" class="product-image" alt="Whole Wheat Sandwich Bread">
+                    <div class="product-name">Fresh Orenges</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$24.00</span>
+                      <span class="sale-price">$18.00</span>
+                      <span class="discount-badg badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="https://greenobject.in/wp-content/uploads/2017/04/1.jpg" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">Fresh Green Celery</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$30.00</span>
+                      <span class="sale-price">$22.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-13.webp" class="product-image rounded" alt="Sunstar Fresh Melon Juice">
+                    <div class="product-name">Sandwich Bread</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$24.00</span>
+                      <span class="sale-price">$18.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Duplicate products for infinite loop -->
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-15.jfif" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Honeyscrips Apples</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$24.00</span>
+                      <span class="sale-price">$12.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF </span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQWLp85gGdWF0gT_AFOhD1zCIJ_hsGndNFvEZXE6G255Y6hbnk_q9PWIGJo_k7MIbcVVc&usqp=CAU" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Royal Stag</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$60.00</span>
+                      <span class="sale-price">$35.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF </span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="product-item">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-14.avif" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">kingfisher Beer</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$50.00</span>
+                      <span class="sale-price">$25.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- jQuery -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <!-- this is for js-code in featured products -->
+        <script>
+          $(document).ready(function() {
+  // Get DOM elements
+  const slider = document.getElementById('productSlider');
+  const productItems = document.querySelectorAll('.product-item');
+  const productCarousel = document.querySelector('.product-carousel');
+  const nextBtn = document.querySelector('.next-btn');
+  const prevBtn = document.querySelector('.prev-btn');
+  // Initialize variables
+  const itemCount = productItems.length;
+  let currentIndex = 0;
+  let autoScrollInterval;
+  let isAnimating = false;
+  // Make sure we have the right CSS for the slider
+  slider.style.display = 'flex';
+  slider.style.transition = 'transform 0.8s ease';
+  // Clone items for infinite scrolling
+  function setupCarousel() {
+    // First, clear any existing clones
+    const existingClones = document.querySelectorAll('.clone-item');
+    existingClones.forEach(clone => clone.remove());
+    // Clone all the original product items
+    productItems.forEach(item => {
+      const clone = item.cloneNode(true);
+      clone.classList.add('clone-item');
+      slider.appendChild(clone);
+    });
+    // Set initial position
+    slider.style.transform = 'translateX(0)';
+  }
+  // Move to a specific item
+  function moveToItem(index) {
+    if (isAnimating) return;
+    isAnimating = true;
+    // Calculate item width relative to visible carousel
+    const itemWidth = productItems[0].offsetWidth;
+    const moveAmount = itemWidth * index;
+    // Move slider with animation
+    slider.style.transition = 'transform 0.8s ease';
+    slider.style.transform = `translateX(-${moveAmount}px)`;
+    currentIndex = index;
+    // Reset to beginning when necessary (after showing clones)
+    if (currentIndex >= itemCount) {
+      setTimeout(() => {
+        // Disable transition temporarily
+        slider.style.transition = 'none';
+        slider.style.transform = 'translateX(0)';
+        currentIndex = 0;
+        // Re-enable transition after a brief delay
+        setTimeout(() => {
+          slider.style.transition = 'transform 0.8s ease';
+          isAnimating = false;
+        }, 50);
+      }, 800); // This should match the transition duration
+    } else {
+      setTimeout(() => {
+        isAnimating = false;
+      }, 800);
+    }
+  }
+  // Start automatic scrolling
+  function startAutoScroll() {
+    stopAutoScroll(); // Clear any existing interval first
+    autoScrollInterval = setInterval(() => {
+      const nextIndex = currentIndex + 1;
+      moveToItem(nextIndex);
+    }, 3000);
+  }
+  // Stop automatic scrolling
+  function stopAutoScroll() {
+    if (autoScrollInterval) {
+      clearInterval(autoScrollInterval);
+    }
+  }
+  // Initialize carousel
+  function initCarousel() {
+    setupCarousel();
+    startAutoScroll();
+    // Next button click
+    nextBtn.addEventListener('click', function() {
+      stopAutoScroll();
+      moveToItem(currentIndex + 1);
+      setTimeout(startAutoScroll, 3000);
+    });
+    // Previous button click
+    prevBtn.addEventListener('click', function() {
+      stopAutoScroll();
+      if (currentIndex > 0) {
+        moveToItem(currentIndex - 1);
+      } else {
+        // If at first item, go to last original item
+        moveToItem(itemCount - 1);
+      }
+      setTimeout(startAutoScroll, 3000);
+    });
+    // Pause on hover
+    productCarousel.addEventListener('mouseenter', stopAutoScroll);
+    productCarousel.addEventListener('mouseleave', startAutoScroll);
+    // Handle window resize
+    window.addEventListener('resize', function() {
+      stopAutoScroll();
+      
+      // Reset position
+      slider.style.transition = 'none';
+      slider.style.transform = 'translateX(0)';
+      currentIndex = 0;
+      
+      // Restart scroll after a moment
+      setTimeout(startAutoScroll, 100);
+    });
+  }
+  
+  // Start the carousel
+  initCarousel();
+});
+        </script>
+          <!-- this is for creating 25% discount Block -->
+          <div class="hero-section">
+            <div class="container content-wrapper">
+              <div class="row align-items-center">
+                <div class="col-lg-6">
+                  <h1 class="discount-title">Get 25% Discount on<br>your first purchase</h1>
+                  <p class="discount-subtitle">Just Sign Up & Register it now to become member.</p>
+                </div>
+                <div class="col-lg-6">
+                  <div class="form-container">
+                    <div class="form-group">
+                      <input type="text" class="form-control" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                      <input type="email" class="form-control" placeholder="Email Address" required>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Submit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- this for creating Most Populer Products -->
+          <div class="container-flued">
+            <div class="carousel-container">
+              <div class="carousel-header">
+               <div class="headerpart"> <h2 class="carousel-title fs-1 fw-bold">Most populer products</h2></div>
+                <div class="carousel-controls">
+                  <a href="#" class="view-all">View All</a>
+                  <button class="carousel-control-btn prev-btn back">
+                    <i class="fas fa-chevron-left"></i>
+                  </button>
+                  <button class="carousel-control-btn next-btn forword">
+                    <i class="fas fa-chevron-right"></i>
+                  </button>
+                </div>
+              </div>
+              <!-- this for carousel body -->
+              <div class="product-carousel item-carousel">
+                <div class="product-slider" id="itemsSilder">
+                  <!-- Product 1 -->
+                  <div class="product-item1 item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-16.jpg" class="product-image" alt="Sandwich Bread">
+                      <div class="product-name">Mushrooms</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$24.00</span>
+                        <span class="sale-price">$20.30</span>
+                        <span class="discount-badge badge bg-success">10% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <!-- Product 2 -->
+                  <div class="product-item1 item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-17.webp" class="product-image" alt="Honeycrisp Apples">
+                      <div class="product-name">Beans</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$25.00</span>
+                        <span class="sale-price">$15.00</span>
+                        <span class="discount-badge badge bg-success">10% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <!-- Product 3 -->
+                  <div class="product-item1 item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-18.webp" class="product-image" alt="Whole Wheat Sandwich Bread">
+                      <div class="product-name">Maateja Rice</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$50.00</span>
+                        <span class="sale-price">$35.00</span>
+                        <span class="discount-badg badge bg-success">8% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <!-- Product 4 -->
+                  <div class="product-item1  item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-19.webp" class="product-image" alt="Honeycrisp Apples">
+                      <div class="product-name">Fizz</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$30.00</span>
+                        <span class="sale-price">$22.00</span>
+                        <span class="discount-badge badge bg-success">10% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <!-- Product 5 -->
+                  <div class="product-item1  item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-20.webp" class="product-image rounded" alt="Sunstar Fresh Melon Juice">
+                      <div class="product-name">Cadbury Dairy Milk</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$18.00</span>
+                        <span class="sale-price">$12.00</span>
+                        <span class="discount-badge badge bg-success">8% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <!-- Duplicate products for infinite loop -->
+                  <div class="product-item1  item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-21.png" class="product-image" alt="Sandwich Bread">
+                      <div class="product-name">Ice cream</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$25.00</span>
+                        <span class="sale-price">$12.00</span>
+                        <span class="discount-badge badge bg-success">10% OFF </span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <div class="product-item1  item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-22.webp" class="product-image" alt="Sandwich Bread">
+                      <div class="product-name">Robertson Sweet Red</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$60.00</span>
+                        <span class="sale-price">$35.00</span>
+                        <span class="discount-badge badge bg-success">12% OFF </span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                  <div class="product-item1 item">
+                    <div class="product-card">
+                      <img src="./asserts/pkg-23.webp" class="product-image" alt="Honeycrisp Apples">
+                      <div class="product-name">Magic Moment Orenge</div>
+                      <div class="product-rating">
+                        ★★★★☆ <span class="product-review-count">(222)</span>
+                      </div>
+                      <div class="product-price">
+                        <span class="original-price">$80.00</span>
+                        <span class="sale-price">$45.00</span>
+                        <span class="discount-badge badge bg-success">10% OFF</span>
+                      </div>
+                      <div class="add-to-cart">
+                        <div class="bottam-part d-flex align-items-center gap-2">
+                          <div class="number-input">
+                            <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                            <input class="quantity" min="0" name="quantity" value="0" type="number">
+                            <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                          </div>
+                          <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                          <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                        </div>
+                      </div>    
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+          <script>
+            
+            $(document).ready(function() {
+            const slider = document.getElementById('itemsSilder');
+            const items = document.querySelectorAll('.item');
+            let position = 0;
+            let visibleItems = getVisibleItems();
+          let interval;
+          let isTransitioning = false;
+
+    // Clone items for infinite loop
+    function setupCarousel() {
+        // Clear existing clones
+        document.querySelectorAll('.clone').forEach(clone => clone.remove());
+        
+        // Clone all items and add them to the end
+        items.forEach(item => {
+            const clone = item.cloneNode(true);
+            clone.classList.add("clone");
+            slider.appendChild(clone);
+        });
+        
+        // Set initial position
+        resetPosition();
+    }
+
+    // Function to get visible items based on screen width
+    function getVisibleItems() {
+        const width = window.innerWidth;
+        if (width >= 1200) return 5;
+        if (width >= 992) return 4;
+        if (width >= 768) return 3;
+        if (width >= 576) return 2;
+        return 1;
+    }
+
+    // Reset position to beginning
+    function resetPosition() {
+        position = 0;
+        slider.style.transition = "none";
+        slider.style.transform = `translateX(0%)`;
+        slider.offsetHeight; // Force reflow
+    }
+
+    // Move to the next item
+    function moveToNextItem() {
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
+        const itemWidth = 100 / visibleItems;
+        position += itemWidth;
+        
+        // Apply smooth transition
+        slider.style.transition = "transform 0.5s ease-in-out";
+        slider.style.transform = `translateX(-${position}%)`;
+        
+        // Check if we need to reset after transition completes
+        setTimeout(() => {
+            const resetPoint = items.length * itemWidth;
+            
+            // If we've reached the end
+            if (position >= resetPoint) {
+                // Reset to beginning without animation
+                resetPosition();
+            }
+            
+            isTransitioning = false;
+        }, 500); // Match transition duration
+    }
+
+    // Start automatic carousel with 3-second interval
+    function startCarousel() {
+        // Clear any existing interval
+        clearInterval(interval);
+        
+        // Set up the interval to move every 3 seconds
+        interval = setInterval(moveToNextItem, 3000);
+    }
+
+    // Pause the carousel
+    function pauseCarousel() {
+        clearInterval(interval);
+    }
+
+    // Handle button clicks
+    function handleButtonClick(direction) {
+        // Stop automatic movement temporarily
+        pauseCarousel();
+        
+        if (isTransitioning) return;
+        isTransitioning = true;
+        
+        const itemWidth = 100 / visibleItems;
+        
+        if (direction > 0) {
+            // Next: move forward by one item
+            position += itemWidth;
+        } else {
+            // Prev: move backward by one item
+            position -= itemWidth;
+            
+            // If we went too far back, jump to end
+            if (position < 0) {
+                position = (items.length - 1) * itemWidth;
+            }
+        }
+        
+        // Apply with smooth transition
+        slider.style.transition = "transform 0.5s ease-in-out";
+        slider.style.transform = `translateX(-${position}%)`;
+        
+        // Check for reset after transition completes
+        setTimeout(() => {
+            const resetPoint = items.length * itemWidth;
+            
+            // If we've reached the end
+            if (position >= resetPoint) {
+                resetPosition();
+            }
+            
+            isTransitioning = false;
+            
+            // Resume automatic movement after a short delay
+            setTimeout(startCarousel, 2000);
+        }, 500);
+    }
+
+    // Initialize everything
+    function initCarousel() {
+        setupCarousel();
+        startCarousel();
+        
+        // Set up control buttons
+        document.querySelector('.back').addEventListener('click', () => {
+            handleButtonClick(-1);
+        });
+        
+        document.querySelector('.forword').addEventListener('click', () => {
+            handleButtonClick(1);
+        });
+        
+        // Pause on hover (optional)
+        document.querySelector('.item-carousel').addEventListener('mouseenter', pauseCarousel);
+        document.querySelector('.item-carousel').addEventListener('mouseleave', startCarousel);
+    }
+    
+    // Handle window resize
+    window.addEventListener('resize', () => {
+        const oldVisibleItems = visibleItems;
+        visibleItems = getVisibleItems();
+        
+        if (oldVisibleItems !== visibleItems) {
+            pauseCarousel();
+            setupCarousel();
+            startCarousel();
+        }
+    });
+    
+    // Start the carousel
+    initCarousel();
+});
+
+
+         </script>
+         <!-- this is for creating Just Arrived Products -->
+         <div class="container-flued">
+          <div class="carousel-container">
+            <div class="carousel-header">
+             <div class="headerpart"> <h2 class="carousel-title  fs-1 fw-bold">Just Arrived</h2></div>
+              <div class="carousel-controls">
+                <a href="#" class="view-all">View All</a>
+                <button class="carousel-control-btn prev-btn moveBack">
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-control-btn next-btn moveForword">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            <!-- this for carousel body -->
+            <div class="product-carousel just-carousel">
+              <div class="product-slider" id="justSilder">
+                <!-- Product 1 -->
+                <div class="product-item2 just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-24.jpg" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Carrot</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$24.00</span>
+                      <span class="sale-price">$10.30</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 2 -->
+                <div class="product-item2 just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-25.jpg" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">Sugar</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$25.00</span>
+                      <span class="sale-price">$15.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 3 -->
+                <div class="product-item2 just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-26.avif" class="product-image" alt="Whole Wheat Sandwich Bread">
+                    <div class="product-name">Tomato</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$50.00</span>
+                      <span class="sale-price">$35.00</span>
+                      <span class="discount-badg badge bg-success">8% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 4 -->
+                <div class="product-item2  just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-27.jpg" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">Dark Side</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$30.00</span>
+                      <span class="sale-price">$22.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Product 5 -->
+                <div class="product-item2  just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-28.jpg" class="product-image rounded" alt="Sunstar Fresh Melon Juice">
+                    <div class="product-name">Black Grapes</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$18.00</span>
+                      <span class="sale-price">$12.00</span>
+                      <span class="discount-badge badge bg-success">8% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <!-- Duplicate products for infinite loop -->
+                <div class="product-item2  just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-29.webp" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Strawberries</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$25.00</span>
+                      <span class="sale-price">$12.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF </span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="product-item2  just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-30.jpg" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Fresh Orenges</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$60.00</span>
+                      <span class="sale-price">$35.00</span>
+                      <span class="discount-badge badge bg-success">12% OFF </span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="product-item2  just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-32.png" class="product-image" alt="Sandwich Bread">
+                    <div class="product-name">Redbull</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$60.00</span>
+                      <span class="sale-price">$35.00</span>
+                      <span class="discount-badge badge bg-success">12% OFF </span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+                <div class="product-item2 just">
+                  <div class="product-card">
+                    <img src="./asserts/pkg-33.webp" class="product-image" alt="Honeycrisp Apples">
+                    <div class="product-name">Stylesh Water Bottel</div>
+                    <div class="product-rating">
+                      ★★★★☆ <span class="product-review-count">(222)</span>
+                    </div>
+                    <div class="product-price">
+                      <span class="original-price">$80.00</span>
+                      <span class="sale-price">$45.00</span>
+                      <span class="discount-badge badge bg-success">10% OFF</span>
+                    </div>
+                    <div class="add-to-cart">
+                      <div class="bottam-part d-flex align-items-center gap-2">
+                        <div class="number-input">
+                          <button onclick="this.parentNode.querySelector('input').stepDown()" class="minus"></button>
+                          <input class="quantity" min="0" name="quantity" value="0" type="number">
+                          <button onclick="this.parentNode.querySelector('input').stepUp()" class="plus"></button>
+                        </div>
+                        <button class="btn btn-success add-cart"><i class="fa-solid fa-cart-shopping p-2"></i>Add to Cart</button>
+                        <div class="favoret"><a href="#"><i class="fa-regular fa-heart"></i></a></div>
+                      </div>
+                    </div>    
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- this is for just arrived block -->
+        <script>
+        $(document).ready(function () {
+    // Calculate visible items based on screen width
+    function getVisibleItems() {
+        const width = $(window).width();
+        if (width >= 1200) return 5;
+        if (width >= 992) return 4;
+        if (width >= 768) return 3;
+        if (width >= 576) return 2;
+        return 1;
+    }
+    const $slider = $("#justSilder");
+    const $carousel = $(".product-carousel");
+    const $items = $(".product-item2.just");
+    let visibleItems = getVisibleItems();
+    let totalItems = $items.length;
+    let index = totalItems; // Start in the middle (at the original items)
+    let autoSlide;
+    let animationFrame;
+    let isTransitioning = false;
+    let resizeTimer;
+    // Calculate item width based on visible items
+    function calculateItemWidth() {
+        visibleItems = getVisibleItems();
+        const containerWidth = $carousel.width();
+        return containerWidth / visibleItems;
+    }
+    // Set item widths and make them visible
+    function setItemWidths() {
+        const itemWidth = calculateItemWidth();
+        
+        // Apply width to all items (original and clones)
+        $(".product-item2").css({
+            "width": itemWidth + "px",
+            "visibility": "visible", // Ensure items are visible
+            "opacity": 1
+        });
+        
+        // Update container height to match items if needed
+        const itemHeight = $(".product-item2").first().outerHeight(true);
+        $carousel.css("height", itemHeight + "px");
+    }
+    // Clone items for truly infinite scrolling effect
+    function setupInfiniteScroll() {
+        // Remove any existing clones
+        $(".product-item2.clone").remove();
+        // Clone items and add them before and after the original items
+        const $beforeClones = $items.clone().addClass("clone before-clone");
+        const $afterClones = $items.clone().addClass("clone after-clone");
+        $slider.prepend($beforeClones);
+        $slider.append($afterClones);
+        // Position the slider to start at the original items
+        const itemWidth = calculateItemWidth();
+        $slider.css({
+            "transition": "none",
+            "transform": `translateX(-${totalItems * itemWidth}px)`
+        });
+        // Force browser reflow to ensure the transform is applied immediately
+        $slider[0].offsetHeight;
+    }
+    // Move slider continuously
+    function moveSlider() {
+        if (isTransitioning) return;
+        const itemWidth = calculateItemWidth();
+        index++;
+        isTransitioning = true;
+        $slider.css({
+            "transition": "transform 0.5s linear",
+            "transform": `translateX(-${index * itemWidth}px)`
+        });
+        // If we've reached the after-clones, instantly jump back to the original items
+        if (index >= totalItems * 2) {
+            // Wait for the transition to complete
+            setTimeout(() => {
+                $slider.css({
+                    "transition": "none",
+                    "transform": `translateX(-${totalItems * itemWidth}px)`
+                });
+                index = totalItems;
+                // Force browser reflow
+                $slider[0].offsetHeight;
+                setTimeout(() => {
+                    isTransitioning = false;
+                }, 50);
+            }, 500);
+        } else {
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+    }
+    // Move slider backward continuously
+    function moveSliderBackward() {
+        if (isTransitioning) return;
+        const itemWidth = calculateItemWidth();
+        index--;
+        isTransitioning = true;
+        $slider.css({
+            "transition": "transform 0.5s linear",
+            "transform": `translateX(-${index * itemWidth}px)`
+        });
+        // If we've reached the before-clones, instantly jump to the end of original items
+        if (index < 0) {
+            // Wait for the transition to complete
+            setTimeout(() => {
+                $slider.css({
+                    "transition": "none",
+                    "transform": `translateX(-${totalItems * itemWidth}px)`
+                });
+                index = totalItems;
+                // Force browser reflow
+                $slider[0].offsetHeight;
+                setTimeout(() => {
+                    isTransitioning = false;
+                }, 50);
+            }, 500);
+        } else {
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+    }
+    // Start auto slide with smooth animation
+    function startAutoSlide() {
+        stopAutoSlide(); // Clear any existing interval
+        autoSlide = setInterval(moveSlider, 3000);
+    }
+    // Stop auto slide
+    function stopAutoSlide() {
+        clearInterval(autoSlide);
+        if (animationFrame) {
+            cancelAnimationFrame(animationFrame);
+            animationFrame = null;
+        }
+    }
+    // Initialize carousel
+    function initCarousel() {
+        // Add a loading state
+        $carousel.css("opacity", "0.5");
+        // Set initial styles for the carousel container
+        $carousel.css({
+            "position": "relative",
+            "overflow": "hidden"
+        });
+        // Set initial styles for the slider
+        $slider.css({
+            "display": "flex",
+            "position": "absolute",
+            "left": 0,
+            "top": 0,
+            "width": "100%"
+        });
+        // Initialize the carousel
+        setItemWidths();
+        setupInfiniteScroll();
+        
+        // Remove loading state
+        $carousel.css("opacity", "1");
+        
+        // Start auto sliding
+        startAutoSlide();
+    }
+    // Completely reinitialize the carousel
+    function reinitializeCarousel() {
+        stopAutoSlide();
+        
+        // Reset the slider position and state
+        $slider.css({
+            "transition": "none",
+            "transform": "translateX(0)"
+        });
+        // Force browser reflow
+        $slider[0].offsetHeight;
+        // Remove all clones
+        $(".product-item2.clone").remove();
+        // Reset index
+        index = totalItems;
+        // Reinitialize everything
+        initCarousel();
+    }
+    // Handle window resize with debounce
+    $(window).on('resize', function() {
+        // Make items visible during resize
+        $(".product-item2").css("visibility", "visible");
+        // Clear previous timer
+        clearTimeout(resizeTimer);
+        // Set a timer to reinitialize after resize stops
+        resizeTimer = setTimeout(function() {
+            reinitializeCarousel();
+        }, 250);
+    });
+    // Initialize on page load
+    initCarousel();
+    // Pause on hover, resume on leave
+    $slider.hover(stopAutoSlide, startAutoSlide);
+    // Button controls
+    $(".next-btn").click(function() {
+        if (!isTransitioning) {
+            moveSlider();
+            stopAutoSlide();
+            startAutoSlide();
+        }
+    });
+    $(".prev-btn").click(function() {
+        if (!isTransitioning) {
+            moveSliderBackward();
+            stopAutoSlide();
+            startAutoSlide();
+        }
+    });
+    // Add CSS to ensure items are always visible during transitions
+    $("<style>")
+        .prop("type", "text/css")
+        .html(`
+            .product-carousel {
+                position: relative;
+                overflow: hidden;
+            }
+            .product-slider {
+                display: flex;
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+            }
+            .product-item2 {
+                flex: 0 0 auto;
+                transition: width 0.3s ease;
+                visibility: visible !important;
+            }
+        `)
+        .appendTo("head");
+});
+        </script>
+            <!-- this is for creating Our Recent Blogs -->
+       <section>
+        <div class="container-flued blog-body">
+            <!-- Section Header -->
+            <div class="d-flex justify-content-between align-items-center mb-4 section-header">
+                <h2 class="fw-bold fs-1 mb-0">Our Recent Blog</h2>
+                <a href="#" class="btn btn-success view-all-btn">View All</a>
+            </div>
+            <!-- Blog Cards Row -->
+            <div class="row g-4">
+                <!-- Blog Card 1 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 shadow-sm blog-card">
+                        <img src="./asserts/pkg-34.avif" 
+                             class="card-img-top blog-img" alt="Dining table with olive oil and glasses">
+                        <div class="card-body p-4">
+                            <div class="d-flex gap-3 text-secondary mb-2 fs-6">
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-calendar"></i>
+                                    <span>22 AUG 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-folder"></i>
+                                    <span class="fw-medium">TIPS & TRICKS</span>
+                                </div>
+                            </div>
+                            <h3 class="card-title fw-bold fs-4 mb-3">Top 10 casual look ideas to dress up your kids</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Card 2 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 shadow-sm blog-card">
+                        <img src="./asserts/pkg-35.avif" 
+                             class="card-img-top blog-img" alt="Raw meat steak on ice">
+                        <div class="card-body p-4">
+                            <div class="d-flex gap-3 text-secondary mb-2 fs-6">
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-calendar"></i>
+                                    <span>25 AUG 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-folder"></i>
+                                    <span class="fw-medium">TRENDING</span>
+                                </div>
+                            </div>
+                            <h3 class="card-title fw-bold fs-4 mb-3">Latest trends of wearing street wears supremely</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Blog Card 3 -->
+                <div class="col-lg-4 col-md-6">
+                    <div class="card h-100 border-0 rounded-3 shadow-sm blog-card">
+                        <img src="./asserts/pkg-36.avif" 
+                             class="card-img-top blog-img" alt="Fresh radishes in a basket">
+                        <div class="card-body p-4">
+                            <div class="d-flex gap-3 text-secondary mb-2 fs-6">
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-calendar"></i>
+                                    <span>28 AUG 2021</span>
+                                </div>
+                                <div class="d-flex align-items-center gap-2">
+                                  <i class="fa-solid fa-folder"></i>
+                                    <span class="fw-medium">INSPIRATION</span>
+                                </div>
+                            </div>
+                            <h3 class="card-title fw-bold fs-4 mb-3">10 Different Types of comfortable clothes ideas for women</h3>
+                            <p class="card-text text-secondary">Lorem ipsum dolor sit amet, consectetur adipi elit. Aliquet eleifend viverra enim tincidunt donec quam. A in arcu, hendrerit neque dolor morbi...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+         <!-- this is for creating download organic app block -->
+          <!-- App Download Section with 100% Bootstrap classes -->
+       <section class="bg-warning py-3 py-md-5 overflow-hidden download rounded-5">
+    <div class="container py-2 py-md-4">
+      <div class="row align-items-center">
+        <!-- Text Content -->
+        <div class="col-lg-6 text-center text-lg-start mb-5 mb-lg-0">
+          <h1 class="display-4 fw-bold mb-3">Download Organic App</h1>
+          <p class="lead mb-4">Online Orders made easy, fast and reliable</p>
+          <div class="d-flex flex-wrap justify-content-center justify-content-lg-start gap-3">
+            <!-- App Store Button -->
+            <a href="#" class="btn btn-dark px-3 px-md-4 py-2 d-flex align-items-center rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 384 512" class="me-2">
+                <path fill="currentColor" d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/>
+              </svg>
+              <div>
+                <div class="small">Download on the</div>
+                <div class="fw-bold">App Store</div>
+              </div>
+            </a>
+            <!-- Google Play Button -->
+            <a href="#" class="btn btn-dark px-3 px-md-4 py-2 d-flex align-items-center rounded-3">
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 512 512" class="me-2">
+                <path fill="currentColor" d="M325.3 234.3L104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6l-58.9-34.1-65.7 64.5 65.7 64.5 60.1-34.1c18-14.3 18-46.5-1.2-60.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/>
+              </svg>
+              <div>
+                <div class="small">GET IT ON</div>
+                <div class="fw-bold">Google Play</div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <!-- Phone Image -->
+        <div class="col-lg-6 text-center position-relative">
+          <div class="position-relative d-inline-block">
+            <!-- Phone mockup with Bootstrap responsive sizing -->
+            <img 
+              src="./asserts/siva-----image-removebg-preview.png" 
+              alt="Organic App on smartphone" 
+              class="img-fluid mx-auto"
+              style="max-width:500px; width:80%;"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+       </section>
+      <!-- This is for creating "Pepoles are also looking for" -->
+       <div class="container-flued Peoples">
+          <h1 class="fs-1 fw-bold mb-3">People  are  also  looking  for</h1>
+           <div class="main-block">
+            <div class="block">
+              <a href="#" class="disabled">Blue  diamon  almonds</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Angie's  Boomchickapop  Corn</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Salty  kettle  Corn</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chobani  Greek  Yogurt</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Sweet  Vanilla  Yogurt</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Foster  Farms  Takeout  Crispy  wings</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Warrior  Blend  Organic</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chao   Cheese  Creamy</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chicken  mealballs</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Blue  diamon  almonds</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Angie's  Boomchickapop  Corn</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Salty  kettle  Corn</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chobani Greek Yogurt</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled ">Sweet  Vanilla  Yogurt</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled ">Foster  Farms  Takeout  Crispy  wings</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Warrior  Blend  Organic</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chao  Cheese  Creamy</a>
+             </div>
+             <div class="block">
+              <a href="#" class="disabled">Chicken  mealballs</a>
+             </div>
+           </div>
+       </div>
+       <!-- this for creating 2nd last block -->
+       <div class="container-flued py-5 secdlast">
+        <div class="row g-4">
+            <!-- Feature 1 -->
+            <div class="col-lg col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fa-solid fa-truck"></i>
+                    </div>
+                    <h3 class="feature-title">Free delivery</h3>
+                    <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum rerum quas similique porro. Repudiandae consequatur id itaque expedita aut eum.</p>
+                </div>
+            </div>
+            <!-- Feature 2 -->
+            <div class="col-lg col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fa-solid fa-shield-halved"></i>
+                    </div>
+                    <h3 class="feature-title">100% secure payment</h3>
+                    <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam debitis commodi hic quidem perferendis veritatis. Id quae neque molestiae impedit.</p>
+                </div>
+            </div>
+            <!-- Feature 3 -->
+            <div class="col-lg col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <h3 class="feature-title">Quality guarantee</h3>
+                    <p class="feature-text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore dolore cumque tempora illum minus, error tempore tenetur amet. Placeat, laborum!</p>
+                </div>
+            </div>
+            <!-- Feature 4 -->
+            <div class="col-lg col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fa-solid fa-circle-check"></i>
+                    </div>
+                    <h3 class="feature-title">Guaranteed savings</h3>
+                    <p class="feature-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae quis omnis eum laudantium alias quia necessitatibus illum nemo aspernatur eveniet!</p>
+                </div>
+            </div>
+            <!-- Feature 5 -->
+            <div class="col-lg col-md-6">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                      <i class="fa-solid fa-gift"></i>
+                    </div>
+                    <h3 class="feature-title">Daily offers</h3>
+                    <p class="feature-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur earum non omnis natus fuga dicta asperiores accusantium deserunt. Incidunt, ducimus!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+     <!-- This is for creating 1st-Footer part  -->
+     <footer>
+      <div class="container-flued">
+        <!-- Logo and Social Icons -->
+        <div class="row">
+          <div class="col-md-12">
+            <div class="logo-container">
+              <img src="./asserts/leaves.png" alt="pic" style="width: 35px; height: 30px; margin-right:2px ;">
+              <h2 class="logo-text">Organic</h2>
+            </div>
+            <div class="social-icons">
+              <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+              <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" aria-label="Amazon"><i class="fab fa-amazon"></i></a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Footer Links -->
+        <div class="row">
+          <!-- Organic Section -->
+          <div class="col-md-3 col-sm-6 footer-section">
+            <div class="footer-links">
+              <h5>Organic</h5>
+              <ul>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Conditions</a></li>
+                <li><a href="#">Our Journals</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Affiliate Programme</a></li>
+                <li><a href="#">Ultras Press</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Quick Links Section -->
+          <div class="col-md-3 col-sm-6 footer-section">
+            <div class="footer-links">
+              <h5>Quick Links</h5>
+              <ul>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Discount Coupons</a></li>
+                <li><a href="#">Stores</a></li>
+                <li><a href="#">Track Order</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">Info</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Customer Service Section -->
+          <div class="col-md-3 col-sm-6 footer-section">
+            <div class="footer-links">
+              <h5>Customer Service</h5>
+              <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Returns & Refunds</a></li>
+                <li><a href="#">Cookie Guidelines</a></li>
+                <li><a href="#">Delivery Information</a></li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Subscribe Section -->
+          <div class="col-md-3 col-sm-6 footer-section">
+            <div class="footer-links">
+              <h5>Subscribe Us</h5>
+              <p>Subscribe to our newsletter to get updates about our grand offers.</p>
+              <div class="input-group subscribe-form">
+                <input type="email" class="form-control" placeholder="Email Address" aria-label="Email Address">
+                <button class="btn btn-dark" type="button">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+      </div>
+     </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+"></script>
+<script>
+  document.querySelector('.custom-dropdown').addEventListener('mouseenter', function () {
+    let dropdown = new bootstrap.Dropdown(this.querySelector('.dropdown-toggle'));
+    dropdown.show();
+  });
+
+  document.querySelector('.custom-dropdown').addEventListener('mouseleave', function () {
+    let dropdown = new bootstrap.Dropdown(this.querySelector('.dropdown-toggle'));
+    dropdown.hide();
+  });   
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const carousel = document.getElementById('categoryCarousel');
+    const carouselInner = document.getElementById('carouselInner');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    
+    let position = 0;
+    let itemWidth = 0;
+    let visibleItems = 0;
+    let totalItems = carouselInner.children.length;
+    let autoplayInterval;
+    let isTransitioning = false; // Add flag to prevent multiple transitions
+    
+    // Clone first and last items for infinite scrolling effect
+    function setupInfiniteScroll() {
+        // Clone the first 'visibleItems' number of elements and add to the end
+        for (let i = 0; i < visibleItems; i++) {
+            const clone = carouselInner.children[i].cloneNode(true);
+            carouselInner.appendChild(clone);
+        }
+        
+        // Clone the last 'visibleItems' number of elements and add to the beginning
+        for (let i = totalItems - 1; i >= totalItems - visibleItems; i--) {
+            const clone = carouselInner.children[i].cloneNode(true);
+            carouselInner.insertBefore(clone, carouselInner.firstChild);
+        }
+        
+        // Adjust initial position to show the original first items (skip the cloned items at the start)
+        position = -itemWidth * visibleItems;
+        updateCarouselPosition(false);
+        
+        // Update total items count
+        totalItems = carouselInner.children.length;
+    }
+    
+    // Calculate item width and visible items based on screen size
+    function calculateDimensions() {
+        const carouselWidth = carousel.offsetWidth;
+        
+        if (window.innerWidth >= 1200) {
+            visibleItems = 6; // Large screens
+        } else if (window.innerWidth >= 992) {
+            visibleItems = 5; // Medium-large screens
+        } else if (window.innerWidth >= 768) {
+            visibleItems = 4; // Medium screens
+        } else if (window.innerWidth >= 576) {
+            visibleItems = 3; // Small screens
+        } else {
+            visibleItems = 2; // Extra small screens
+        }
+        
+        itemWidth = carouselWidth / visibleItems;
+        
+        // Set width for each item
+        Array.from(carouselInner.children).forEach(item => {
+            item.style.width = `${itemWidth}px`;
+        });
+        
+        // Reset the carousel structure for the new dimensions
+        resetCarousel();
+    }
+    
+    // Reset the carousel to original state and set up again
+    function resetCarousel() {
+        // Remove all cloned items first
+        while (carouselInner.children.length > totalItems) {
+            carouselInner.removeChild(carouselInner.firstChild);
+            carouselInner.removeChild(carouselInner.lastChild);
+        }
+        
+        // Setup infinite scroll again
+        setupInfiniteScroll();
+    }
+    
+    // Update carousel position with or without transition
+    function updateCarouselPosition(withTransition = true) {
+        if (!withTransition) {
+            carouselInner.style.transition = 'none';
+        } else {
+            carouselInner.style.transition = 'transform 0.5s ease';
+        }
+        
+        carouselInner.style.transform = `translateX(${position}px)`;
+        
+        // Reset transition property after a brief delay
+        if (!withTransition) {
+            setTimeout(() => {
+                carouselInner.style.transition = 'transform 0.5s ease';
+            }, 10);
+        }
+    }
+    
+    // Move to next item
+    function moveNext() {
+        if (isTransitioning) return; // Prevent multiple transitions
+        isTransitioning = true;
+        
+        position -= itemWidth;
+        updateCarouselPosition();
+        
+        // When we've scrolled past the original items and showing clones, reset to beginning
+        const threshold = -itemWidth * (totalItems - visibleItems);
+        
+        if (position <= threshold) {
+            // Calculate how many items we've gone past the threshold
+            const overshoot = Math.abs(position - threshold);
+            
+            // Reset to the corresponding position that shows the same visual items
+            setTimeout(() => {
+                position = -itemWidth * visibleItems - (overshoot % itemWidth);
+                updateCarouselPosition(false);
+                isTransitioning = false;
+            }, 500); // Wait for transition to complete
+        } else {
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+    }
+    
+    // Move to previous item
+    function movePrev() {
+        if (isTransitioning) return; // Prevent multiple transitions
+        isTransitioning = true;
+        
+        position += itemWidth;
+        updateCarouselPosition();
+        
+        // When we've scrolled to the clones at the beginning, reset to end
+        const startThreshold = -itemWidth * visibleItems;
+        
+        if (position > startThreshold) {
+            // Calculate how many items we've gone past the start threshold
+            const overshoot = startThreshold - position;
+            
+            // Reset to the corresponding position that shows the same visual items
+            setTimeout(() => {
+                position = -itemWidth * (totalItems - (2 * visibleItems)) - (overshoot % itemWidth);
+                updateCarouselPosition(false);
+                isTransitioning = false;
+            }, 500); // Wait for transition to complete
+        } else {
+            setTimeout(() => {
+                isTransitioning = false;
+            }, 500);
+        }
+    }
+    
+    // Start autoplay
+    function startAutoplay() {
+        stopAutoplay(); // Clear any existing interval
+        autoplayInterval = setInterval(moveNext, 3000); // Move every 3 seconds
+    }
+    
+    // Stop autoplay
+    function stopAutoplay() {
+        if (autoplayInterval) {
+            clearInterval(autoplayInterval);
+        }
+    }
+    
+    // Event listeners
+    nextBtn.addEventListener('click', function() {
+        moveNext();
+        stopAutoplay();
+        startAutoplay(); // Restart autoplay after manual navigation
+    });
+    
+    prevBtn.addEventListener('click', function() {
+        movePrev();
+        stopAutoplay();
+        startAutoplay(); // Restart autoplay after manual navigation
+    });
+    
+    // Handle window resize
+    window.addEventListener('resize', calculateDimensions);
+    
+    // Initialize
+    calculateDimensions();
+    setupInfiniteScroll();
+    startAutoplay();
+    
+    // Handle transition end to prevent stutter
+    carouselInner.addEventListener('transitionend', function() {
+        // Now handled in moveNext/movePrev functions
+    });
+    
+    // Pause autoplay when hovering over carousel
+    carousel.addEventListener('mouseenter', stopAutoplay);
+    carousel.addEventListener('mouseleave', startAutoplay);
+});
+
+</script>
+</body>
+</html>
